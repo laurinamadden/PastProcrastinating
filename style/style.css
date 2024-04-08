@@ -1,5 +1,41 @@
 /* Will need to minify this code before submition */
 /* Author : Laurina Madden x20200765 */
 
+* {
+	margin: 0;
+	margin-top: 2%;
+	padding: 5px;
+	/*Colours from W3 Schools*/
+	/*background-color: blueviolet;*/
+	/*background-color: darkviolet;*/
+	background-color: #9966ff;
+	/*background-color: #aa80ff;*/
+	text-align: center;
+	color: white;
+	font-family: Arial;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: x-large;
+}
+
+.button {
+	padding: 25px 30px;
+	cursor; pointer;
+	text-align: center;
+	outline: none;
+	border: none;
+	border-radius: 30px;
+	background-color: darkviolet;
+	box-shadow: 0 9px #aa80ff;
+	
+	
+}
+
+.button:hover {
+	background-color: darkviolet;
+	box-shadow: 0 9px #aa80ff;
+}
 
 
