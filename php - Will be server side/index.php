@@ -4,8 +4,12 @@
 // This wil be the server side of the website 
 
 // 
+// To connect to the database and not have to rewrite the code from that file
+include 'databaseConnection.php';
 
-$host = 'localhost';
 
+
+
+$conn->close();
 
 ?>
