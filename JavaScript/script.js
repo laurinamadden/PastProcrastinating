@@ -6,7 +6,7 @@
 
 // Hide buttons below at first step and only show when they are called 
 fuction hideButtons(){
-	
+// might not be needed here	
 }
 
 

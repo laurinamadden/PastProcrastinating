@@ -15,6 +15,7 @@ CREATE TABLE clients (
 CREATE TABLE task1 (
 	id INT(11) NOT NULL AUTO_INCREMENT,
 	task1name VARCHAR(20) NOT NULL,
+	adviceGiven (10) NOT NULL,
 	client_id INT(11) NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (client_id) REFERENCES clients(id)
@@ -25,6 +26,7 @@ CREATE TABLE task1 (
 CREATE TABLE task2 (
 	id INT(11) NOT NULL AUTO_INCREMENT,
 	task2name VARCHAR(20) NOT NULL,
+	adviceGiven (10) NOT NULL,
 	client_id INT(11) NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (client_id) REFERENCES clients(id)
@@ -35,6 +37,7 @@ CREATE TABLE task2 (
 CREATE TABLE task3 (
 	id INT(11) NOT NULL AUTO_INCREMENT,
 	task3name VARCHAR(20) NOT NULL,
+	adviceGiven (10) NOT NULL,
 	client_id INT(11) NOT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (client_id) REFERENCES clients(id)
