@@ -1,5 +1,6 @@
 -- Author : Laurina Madden x20200765
--- This file will be used to set up the databases 
+
+-- SQL file to set up the database for website - Past Procratinating
 
 
 -- Table 1 - client information and primary key to link to tasks
