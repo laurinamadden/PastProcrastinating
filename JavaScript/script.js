@@ -1,5 +1,7 @@
 // Author : Laurina Madden x20200765
 // Objective : Help the user with tasks they are avoiding
+// JavaScript for website - Past Procratinating
+
 
 // Stages ?
 //

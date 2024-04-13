@@ -1,0 +1,84 @@
+
+<!-- Log In Page of website - Past Procratinating -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<title>Log in form</title>
+		<meta name="keywords" content="Log In">
+		<meta name="author" content="Laurina Madden">
+		
+		<!-- Adding utf-8 character encoding -->
+		<meta charset="utf-8">
+		
+		<!-- Bootstrap CSS -->
+		<!-- <link href="https:..." crossorigin="anonymous"><link/> -->
+		
+		<!-- Website CSS -->
+		<link rel="stylesheet" href="../style/style.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="style/style.css"/> -->
+		
+	</head>
+	
+	<body>
+		<div>
+			<span>
+				<!-- Heading for this webpage -->
+				<h1>Log In</h1>
+				<!-- <h2>Log In</h2> -->
+				<br>
+				<br>
+				<br>
+			</span>
+			<span>
+				<!-- Writing under heading -->
+				<b>Please enter your log in details below</b>
+				<br>
+				<br>
+			</span>
+		</div>
+		<div class="container">
+			<!-- Log in form -->
+			<!-- form is -->
+			<!-- method is telling the program how the form data is sent to the server -->
+			<!-- post is more secure than get method-->
+			<!-- action gives the URL of the server-side file to process the data  -->
+			<form method= "post" action= "databaseConnection.php">
+			<!-- Not sure if the file name is right -->
+			
+			<div class= "???">
+				<label for ="username">Username:</label>
+				<br>
+				<input type="text" required>
+				<p></p>
+				<br>
+				<br>
+				<label for ="password">Password:</label>
+				<br>
+				<input type="text" required>
+				<p>8 to 10 characters. Including 1 number, 1 capital letter, 1 lower case letter and 1 special character</p>
+				<br>
+				<br>
+				<label for ="confirmPassword">Confirm Password:</label>
+				<br>
+				<input type="text" required>
+				<p></p>
+				<br>
+				<br>
+				<label for ="email">Email:</label>
+				<br>
+				<input type="text" required>
+				<p></p>
+			</div>
+		</div>
+		<div>
+			<span>
+				<!-- Button to trigger sending log in details for validation -->
+				<button class="button" Onclick = "" >Log In/Submit</button>
+			</span>
+		</div>
+	</body>
+
+</html>

@@ -1,7 +1,13 @@
 <?php
+// This is the php file to connect the database to the for website - Past Procratinating
+
+// In php $ is used to declare and reference variables. 
+// Its mandatory at the beginning of all variable names.
+
 $servername = "localhost";
 $username = "username";
 $password = "password";
+$confirmPassword = "confirmPassword";
 $dbname = "database";
 
 // variable called $servername and localhost is the assigned value
