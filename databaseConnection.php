@@ -14,7 +14,7 @@ $dbname = "database";
 $servername = "localhost";
 //
 $dbname = '?';
-$user = '?';
+$username = '?';
 $password = '?';
 
 $email = '?';
@@ -23,6 +23,18 @@ $task1name = '?';
 $task2name = '?';
 $task3name = '?';
 
+// might need to have function to call - actionDB()
+// function actionDB(){
+//		global $host, $username, $password, $dbName???;
+
+//  $mysqli = mysqli_connect($host, $username, $password, $dbName);
+
+//  if (mysqli_connect_errno()) {
+//    printf("Connect failed: %s\n", mysqli_connect_error());
+//    exit();
+//  } 
+//}
+
 // Create a new connection to the MySQL database
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -30,7 +42,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-
 
 
 ?>
