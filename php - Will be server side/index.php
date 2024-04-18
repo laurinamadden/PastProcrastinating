@@ -5,8 +5,10 @@
 // The user won't be able to access this file because it is in its own folder 
  
 // To connect to the database and not have to rewrite the code from that file
-include 'databaseConnection.php';
+//include 'databaseConnection.php';
 
+
+include 'config.php';
 
 
 

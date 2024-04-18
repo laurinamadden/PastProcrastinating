@@ -39,38 +39,50 @@
 			</span>
 		</div>
 		<div>
+			
 			<!-- Registration form -->
-			<label for ="username">Username:</label>
+			<!-- Org I had the Register button on its own. Not within the form -->
+			<!-- Problem here was that the source code was deplayed at first when I clicked on the register button -->
+				<!-- ethier the server isnt config correctly so it just shows the source code -->
+				<!-- I had hoped to avoid a config.php but might need it after all--> 
+				<!-- --> 
+			<form action="php/register.php" method="post">	
+				<label for ="username">Username:</label>
 				<br>
-				<input type="text" required>
+				<!-- <input type="text" required> Chrome didnt like this -->
+				<!-- <input type="password" required> Chrome didnt like this -->
+				<!-- got error "Incorrect use of <label for=FORM_ELEMENT" -->
+				<input type="username" id="username" required>
+				<!-- Line above fixed error so had to apply to rest -->
 				<p></p>
 				<br>
 				<br>
 				<label for ="password">Password:</label>
 				<br>
-				<input type="text" required>
+				<input type="password" id="password" required>
 				<p>8 to 10 characters. Including 1 number, 1 capital letter, 1 lower case letter and 1 special character</p>
 				<br>
 				<br>
+				<!--
 				<label for ="confirmPassword">Confirm Password:</label>
 				<br>
-				<input type="text" required>
+				<input type="password" id="confirmPassword" required>
 				<p></p>
 				<br>
 				<br>
 				<label for ="email">Email:</label>
 				<br>
-				<input type="text">
+				<input type="email" id="email" required>
 				<!-- <input type="text" required> -->
 				<p></p>
-		</div>
-		<div>
-			<span>
+		
+			
 				<!-- Button to trigger sending log in details for validation -->
-				<button class="button" Onclick = "" >Register/Submit</button>
-				
-				<!-- ?? <input type="submit" value="Register"> ?? -->
-			</span>
+				<!-- <button class="button" Onclick = "" >Register/Submit</button> -->
+				<button class="button" type="submit" >Register/Submit</button>
+				<!-- Or -->
+				<!-- <input type="submit" value="Register"> -->
+			</form>
 		</div>
 	</body>
 

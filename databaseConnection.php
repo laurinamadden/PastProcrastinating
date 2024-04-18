@@ -4,20 +4,22 @@
 // In php $ is used to declare and reference variables. 
 // Its mandatory at the beginning of all variable names.
 
+// variable called $servername and localhost is the assigned value
+
 $servername = "localhost";
+
 $username = "username";
 $password = "password";
-$confirmPassword = "confirmPassword";
-$dbname = "database";
+//***$confirmPassword = "confirmPassword";
+//$dbname = "database";
+$dbname = "clients";
 
-// variable called $servername and localhost is the assigned value
-$servername = "localhost";
 //
-$dbname = '?';
-$username = '?';
-$password = '?';
+//$dbname = '?';
+//$username = '?';
+//$password = '?';
 
-$email = '?';
+//***$email = 'email';
 
 $task1name = '?';
 $task2name = '?';
@@ -36,6 +38,7 @@ $task3name = '?';
 //}
 
 // Create a new connection to the MySQL database
+//$conn = new mysqli($servername, $username, $password, $dbname);
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check if the connection was successful
