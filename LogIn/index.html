@@ -45,27 +45,26 @@
 			<!-- method is telling the program how the form data is sent to the server -->
 			<!-- post is more secure than get method-->
 			<!-- action gives the URL of the server-side file to process the data  -->
-			<form method= "post" action= "databaseConnection.php">
+			<form method= "post" action= "..LogIn/php/logIn.php">
 			<!-- Not sure if the file name is right -->
 			
-			<div class= "???">
 				<label for ="username">Username:</label>
 				<br>
-				<input type="text" required>
+				<!-- Same error in chrome that was in the reg index.html -->
+				<!-- <input type="text" required> -->
+				<input type="username" id="username" required>
 				<br>
 				<br>
 				<label for ="password">Password:</label>
 				<br>
-				<input type="text" required>
-			</div>
-		</div>
-		<div>
-			<span>
+				<input type="password" id="password" required>
+				<br>
 				<!-- Button to trigger sending log in details for validation -->
-				<button class="button" Onclick = "" >Log In/Submit</button>
-				
-				<!-- ?? <input type="submit" value="LogIn"> ?? -->
-			</span>
+				<!-- <button class="button" Onclick = "" >Log In/Submit</button> -->
+				<!-- ??? Or ??? -->
+				<!-- <input type="submit" value="LogIn"> -->
+				<button class="button" type="submit" >Log In/Submit</button>
+			</form>
 		</div>
 	</body>
 
