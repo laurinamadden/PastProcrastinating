@@ -10,11 +10,11 @@ include 'databaseConnection.php';
 // Database configuration
 define('DB_HOST', 'your_database_host');
 define('DB_USER', 'your_database_user');
-define('DB_PASS', 'your_database_password');
+//define('DB_PASS', 'your_database_password');
 define('DB_NAME', 'your_database_name');
 
 // To connect to the database and not have to rewrite the code from that file
-include 'databaseConnection.php';
+//include 'databaseConnection.php';
 
 // this is in databaseConnection.php
 // Create a new database connection
