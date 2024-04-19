@@ -21,9 +21,9 @@ $dbname = "clients";
 
 //***$email = 'email';
 
-$task1name = '?';
-$task2name = '?';
-$task3name = '?';
+//$task1name = '?';
+//$task2name = '?';
+//$task3name = '?';
 
 // might need to have function to call - actionDB()
 // function actionDB(){
