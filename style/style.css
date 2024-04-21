@@ -23,7 +23,7 @@ h1 {
 
 .button {
 	padding: 25px 30px;
-	cursor; pointer;
+	cursor: pointer;
 	text-align: center;
 	outline: none;
 	border: none;
@@ -39,4 +39,15 @@ h1 {
 	box-shadow: 0 9px #aa80ff;
 }
 
-
+#hider {
+    /*background-color: #9966ff;*/
+    border-radius: 25px;
+    color: #fff;
+    padding: 4px;
+}
+#shower {
+    /*background-color: #9966ff;*/
+    border-radius: 25px;
+    color: #fff;
+    padding: 4px;
+}

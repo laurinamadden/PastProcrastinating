@@ -6,7 +6,7 @@
 -- Table 1 - client information and primary key to link to tasks
 CREATE TABLE clients (
 	id INT AUTO_INCREMENT PRIMARY KEY,
-	username VARCHAR(20) NOT NULL,
+	username VARCHAR(10) NOT NULL,
 	--email VARCHAR(30) NOT NULL,
 	password VARCHAR(10) NOT NULL
  

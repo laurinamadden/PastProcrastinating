@@ -14,13 +14,22 @@ error_reporting(E_ALL);
 
 // To connect to the database and not have to rewrite the code from that file
 //include 'databaseConnection.php';
+//include '../databaseConnection.php';
+//include '../../databaseConnection.php';
+//include 'C:/Users/lauri/OneDrive/Desktop/FinalProjectCode/Register/php/databaseConnection.php';
+//include 'C:\Users\lauri\OneDrive\Desktop\FinalProjectCode\Register\php\databaseConnection.php';
 require_once 'databaseConnection.php';
+//require_once($_SERVER['DOCUMENT_ROOT'] . '\databaseConnection.php');
 
 // Check if the request method is POST
 if ($_SERVER['REQUEST_METHOD']!== 'POST') {
     die('Invalid request method');
 }
 
+
+// Call function might be needed - here or higher up
+register();
+	
 //Debugging
 //ini_set('display_errors', 1);
 //ini_set('display_startup_errors', 1);
@@ -63,6 +72,10 @@ $passwordHash = password_hash($password, PASSWORD_DEFAULT, $options);
 	$stmt->bindParam(':password', $passwordHash);
 	$stmt->execute();
 */
+
+	// Call function might be needed - here or higher up
+	register();
+	
 	// Redirect the user to the login page
 	header('Location: /LogIn/index.html');
 	// Or 
