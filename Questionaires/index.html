@@ -23,11 +23,36 @@
 		
 	</head>
 	
-	<body>
-	<h1>Questionaires<h1>
-	
-	
-	
-	</body>
+	<body onload="hidebuttons()"">
+		<div>
+			<!-- jQuery div to show and hide with buttons - for lines instead of words -->
+			<button id="hider">Hide</button>
+			<button id="shower">Show</button>
+		</div>
+		<div>
+			<h1>Questionaires</h1>
+			<br>
+		</div>
+		</div id="B1">
+			<!-- First stage buttons - Selection - Short or Long Questionaire -->
+			<p>Would you like a short or longer questionaire?</p>
+			<!-- Buttons stage 1 options -->
+			<button class="button" onclick="B1option1()" >Short</button>
+			<button class="button" onclick="B1option2()" >Longer</button>
+		</div>
+		<div>
 
+
+		</div>
+		<!-- Return info to user -->
+		<div>
+			<b id="return2" ></b>
+		</div>
+		<!-- Option to user -->
+		<div>
+
+		</div>
+	</body>
+	<!-- JavaScript file link -->
+	<script src="javaScript/script.js"></script>
 </html>	
