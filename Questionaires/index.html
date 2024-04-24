@@ -1,6 +1,4 @@
-
 <!-- Questionaires Page of website - Past Procratinating -->
-
 
 <!DOCTYPE html>
 <!-- <html lang="en"> -->
@@ -23,36 +21,84 @@
 		
 	</head>
 	
-	<body onload="hidebuttons()"">
-		<div>
-			<!-- jQuery div to show and hide with buttons - for lines instead of words -->
-			<button id="hider">Hide</button>
-			<button id="shower">Show</button>
-		</div>
-		<div>
-			<h1>Questionaires</h1>
-			<br>
-		</div>
-		</div id="B1">
-			<!-- First stage buttons - Selection - Short or Long Questionaire -->
-			<p>Would you like a short or longer questionaire?</p>
-			<!-- Buttons stage 1 options -->
-			<button class="button" onclick="B1option1()" >Short</button>
-			<button class="button" onclick="B1option2()" >Longer</button>
-		</div>
-		<div>
+	<body onload="hideButtons()">
+		<div class="container">
+			<div>
+				<!-- jQuery div to show and hide with buttons - for lines instead of words -->
+				<!-- <button id="hider">Hide</button> -->
+				<!-- <button id="shower">Show</button> -->
+			</div>
+			<div>
+				<h1>Questionaires</h1>
+				<br>
+			</div>
+			<div id="B1">
+				<!-- First stage buttons - Selection - Short or Long Questionaire/Task -->
+				<!-- <p>Would you like a short or longer questionaire?</p> -->
+				<p>Would you have a short or longer task in mind?</p>
+				<!-- Buttons stage 1 options -->
+				<button class="button" onclick="B1option1()" >Short Task</button>
+				<button class="button" onclick="B1option2()" >Longer Task</button>
+			</div>
 
+			<!-- Short Questionaire -->
+			<div id="B2S">
+				<!-- Second stage buttons - First selection for short questionaire -->
+				<p>Welcome to the Short Task Questionaire!</p>
+				<p>If you started the task now. How long would it take to complete?</p>
+				<!-- Buttons stage 2 options -->
+				<button class="button" onclick="B2Soption1()" >Less than 10 minutes</button>
+				<button class="button" onclick="B2Soption2()" >10 to 20 minutes</button>
+				<button class="button" onclick="B2Soption3()" >30 to 40 minutes</button>
+				<button class="button" onclick="B2Soption4()" >Longer than 40 minutes
+				</button>
+			</div>
 
-		</div>
-		<!-- Return info to user -->
-		<div>
-			<b id="return2" ></b>
-		</div>
-		<!-- Option to user -->
-		<div>
+			<div id="B3S">
+				<!-- Third stage buttons - Second selection for short questionaire -->
+				<p>How much time have you spent putting off the task?</p>
+				<!-- Buttons stage 3 options -->
+				<button class="button" onclick="B3Soption1()" >30 minutes or less</button>
+				<button class="button" onclick="B3Soption2()" >Between 30 minutes and an hour</button>
+				<button class="button" onclick="B3Soption3()" >More than an hour</button>
+			</div>
 
+			<!-- Longer Questionaire -->
+			<div id="B2L">
+				<!-- Second stage buttons - First selection for longer questionaire -->
+				<p>Welcome to the longer Task Questionaire!</p>
+				<p>?</p>
+				<!-- Buttons stage 2 options -->
+				<button class="button" onclick="B2Loption1()" >?</button>
+				<button class="button" onclick="B2Loption2()" >?</button>
+			</div>
+
+			<div id="B3L">
+				<!-- Third stage buttons - Second selection for longer questionaire -->
+				<p>?</p>
+				<!-- Buttons stage 3 options -->
+				<button class="button" onclick="B3Loption1()" >?</button>
+				<button class="button" onclick="B3Loption2()" >?</button>
+			</div>
+
+			<div id="B4L">
+				<!-- Forth stage buttons - Third selection for longer questionaire -->
+				<p>?</p>
+				<!-- Buttons stage 4 options -->
+				<button class="button" onclick="B4Loption1()" >?</button>
+				<button class="button" onclick="B4Loption2()" >?</button>
+			</div>
+
+			<!-- Return info to user -->
+			<div>
+				<b id="return2" ></b>
+			</div>
+			<!-- Option to user -->
+			<div>
+
+			</div>
 		</div>
 	</body>
 	<!-- JavaScript file link -->
-	<script src="javaScript/script.js"></script>
+	<script src="JavaScript/script.js"></script>
 </html>	

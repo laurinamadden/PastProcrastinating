@@ -1,6 +1,7 @@
 <?php
     $documentRoot = __DIR__ . '/public_html';
-    $port = 8000;
+    //$port = 8000;
+    $port = 80;
 
     if (php_sapi_name() === 'cli-server') {
         $url = parse_url('http://localhost:' . $port . '/' . $_SERVER['PATH_INFO']);

@@ -15,10 +15,10 @@ error_reporting(E_ALL);
 // To connect to the database and not have to rewrite the code from that file
 //include 'databaseConnection.php';
 //include '../databaseConnection.php';
-//include '../../databaseConnection.php';
+include '../../databaseConnection.php';
 //include 'C:/Users/lauri/OneDrive/Desktop/FinalProjectCode/Register/php/databaseConnection.php';
 //include 'C:\Users\lauri\OneDrive\Desktop\FinalProjectCode\Register\php\databaseConnection.php';
-require_once 'databaseConnection.php';
+//require_once 'databaseConnection.php';
 //require_once($_SERVER['DOCUMENT_ROOT'] . '\databaseConnection.php');
 
 // Check if the request method is POST
