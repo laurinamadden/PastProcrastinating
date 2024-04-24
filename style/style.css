@@ -9,8 +9,13 @@
 	/*Colours from W3 Schools*/
 	/*background-color: blueviolet;*/
 	/*background-color: darkviolet;*/
+	/*height: 100px;*/
 	background-color: #9966ff;
 	/*background-color: #aa80ff;*/
+	/*background: linear-gradient(to bottom, #9966ff, #aa80ff);*/
+	/*background-image: linear-gradient(to bottom, #9966ff, #aa80ff);*/
+	/*background-image: linear-gradient(to top right, #9966ff, #aa80ff);*/
+	background-image: linear-gradient(to left, #9966ff, #aa80ff);
 	text-align: center;
 	color: white;
 	font-family: Arial;
@@ -40,14 +45,14 @@ h1 {
 }
 
 #hider {
-    /*background-color: #9966ff;*/
+    background-color: #9966ff;*/
     border-radius: 25px;
-    color: #fff;
+    color: #9966ff;
     padding: 4px;
 }
 #shower {
-    /*background-color: #9966ff;*/
+    background-color: #9966ff;*/
     border-radius: 25px;
-    color: #fff;
+    color: #9966ff;
     padding: 4px;
 }

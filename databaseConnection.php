@@ -9,10 +9,12 @@
 
 // variable called $servername and test is the assigned value
 
-$servername = "test";
-//$servername = "localhost";
-$username = "username";
-$password = "password";
+//$servername = "test";
+$servername = "localhost";
+//$username = "username";
+$username = "root";
+//$password = "password";
+$password = "";
 //***$confirmPassword = "confirmPassword";
 //$dbName = "database";
 $dbName = "clients";
@@ -94,7 +96,25 @@ int salite3 open(
 ); 
 */
 echo "In datbaseConnection.php... going to connect to database";
+//mysqli_connect(){
+// mysqli_connect() - Object-oriented style
+//$conn = new mysqli("hostname", "username", "password", "database_name");
 
+$conn = new mysqli("$servername", "$username", "$password", "$dbName");
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+/*
+// mysqli_connect() - Procedural style:
+$conn = mysqli_connect("$servername", "$username", "$password", "$dbName");
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully";
+*/
+//}
+/*
 // Create a new database connection
 //$conn = new mysqli($host, $user, $password, $dbname);
 // servername == serverhost
@@ -103,7 +123,6 @@ $conn = new mysqli($servername, $username, $password, $dbName);
 echo "In datbaseConnection.php... going to check if connection failed";
 
 // Check the connection
-/*
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
@@ -112,7 +131,7 @@ if ($conn->connect_error) {
 //$username = $_POST['username'];
 //$password = $_POST['password'];
 
-echo "In datbaseConnection.php... Just above register function";
+//echo "In datbaseConnection.php... Just above register function";
 
 function register(){
 	// Get user input from the HTML form
@@ -126,7 +145,7 @@ function register(){
 		echo "Error: " . $sql . "<br>" . $conn->error;
 	}
 	// Close database connection
-	$conn->close();
+	//$conn->close();
 }
 echo "In datbaseConnection.php... Just above logIn function";
 
@@ -147,10 +166,10 @@ function logIn(){
 	}
 	
 	// Close database connection
-	$conn->close();
+	//$conn->close();
 }
 
 // Close database connection
-//$conn->close();
+$conn->close();
  
 ?>

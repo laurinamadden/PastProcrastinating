@@ -8,7 +8,7 @@ CREATE TABLE clients (
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	username VARCHAR(10) NOT NULL,
 	--email VARCHAR(30) NOT NULL,
-	password VARCHAR(10) NOT NULL
+	password VARCHAR(15) NOT NULL
  
 );
 

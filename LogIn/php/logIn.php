@@ -25,19 +25,19 @@ $result = mysqli_query($conn, $query);
 
 // Log in - Check if the query returned a result
 if (mysqli_num_rows($result) == 1) {
-	// ??? Client exists, so start a session and redirect to the dashboard
+	// ??? Client exists, so start a session and redirect to the dashboard/Questionaires
 	session_start();
 	$_SESSION['username'] = $username;
 	// ???
 	//header('Location: dashboard.php');
-	header('Location: ../Questionaires/index.html');
+	header('Location: ../../Questionaires/index.html');
 } else {
 	// Log in - Client doesn't exist, so display an error message
 	die('Invalid username or password.');
 }
 
 //Redirect the user to the Questionaires page
-//	header('Location: ../Questionaires/index.html');
+	header('Location: ../../Questionaires/index.html');
 
 // Redirect the user to the UserDashboard page
 //	header('Location: ../UserDashboard/index.html');
